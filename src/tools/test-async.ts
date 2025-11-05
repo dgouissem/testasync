@@ -1,5 +1,5 @@
-function fctAsyncPromise(prm) {
-    return new Promise((resolve, reject) => {
+export function fctAsyncPromise(prm: number) : Promise<string> {
+    return new Promise<string>((resolve, reject) => {
         //-----
         setTimeout(() => {
             if (prm === 0) {
