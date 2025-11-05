@@ -1,5 +1,5 @@
-class name {
-    constructor(parameters) {
+export class LaClasse {
+    constructor() {
         
     }
 }
