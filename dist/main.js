@@ -3,8 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const test_async_1 = require("./tools/test-async");
 async function main() {
     debugger;
-    const ret = await (0, test_async_1.fctAsyncPromise)(0);
-    console.log(`ret ${ret}`);
+    try {
+        const ret = await (0, test_async_1.fctAsyncPromise)(1);
+        console.log(`ret ${ret}`);
+    }
+    catch (ex) {
+        console.log(`ex ${ex}`);
+    }
 }
 console.log("Start app (ts)");
 main();

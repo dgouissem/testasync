@@ -4,8 +4,14 @@ import { fctAsyncPromise } from './tools/test-async';
 
 async function main() {
     debugger;
-    const ret: string = await fctAsyncPromise(0);
-    console.log(`ret ${ret}`);
+    try {
+        const ret: string = await fctAsyncPromise(1);
+        console.log(`ret ${ret}`);
+    }
+    catch (ex) {
+        console.log(`ex ${ex}`);
+    }
+
 }
 
 console.log("Start app (ts)")
